@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "thumbnail": "thumbnail1",
+    "title": "Best Channel to Learn Coding",
+    "channel": "GreatStack",
+    "views": "16k",
+    "time": "2 days ago"
+  },
+  {
+    "id": 2,
+    "thumbnail": "thumbnail2",
+    "title": "Learn JavaScript Fast",
+    "channel": "CodeMaster",
+    "views": "20k",
+    "time": "1 day ago"
+  },
+  {
+    "id": 3,
+    "thumbnail": "thumbnail3",
+    "title": "React Crash Course",
+    "channel": "ReactDev",
+    "views": "10k",
+    "time": "3 days ago"
+  },
+  {
+    "id": 4,
+    "thumbnail": "thumbnail4",
+    "title": "CSS Mastery",
+    "channel": "StylePro",
+    "views": "18k",
+    "time": "5 days ago"
+  },
+  {
+    "id": 5,
+    "thumbnail": "thumbnail5",
+    "title": "Understanding APIs",
+    "channel": "TechSavvy",
+    "views": "25k",
+    "time": "1 week ago"
+  },
+  {
+    "id": 6,
+    "thumbnail": "thumbnail6",
+    "title": "Build a Fullstack App",
+    "channel": "FullStackWay",
+    "views": "12k",
+    "time": "4 days ago"
+  },
+  {
+    "id": 7,
+    "thumbnail": "thumbnail7",
+    "title": "Node.js Essentials",
+    "channel": "ServerMaster",
+    "views": "30k",
+    "time": "2 weeks ago"
+  },
+  {
+    "id": 8,
+    "thumbnail": "thumbnail8",
+    "title": "Git for Beginners",
+    "channel": "VersionControl",
+    "views": "8k",
+    "time": "6 days ago"
+  }
+]
