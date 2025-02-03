@@ -18,10 +18,19 @@ import comment13 from '../../assets/thumbnail3.png';
 import options from '../../assets/TD.png';
 import like from '../../assets/like.png';
 import dislike from '../../assets/dislike.png';
-import reply from '../../assets/reply.png';
+import dropdown from '../../assets/dropdown.png';
 import recommendedVideo1 from '../../assets/mike.png';
 import recommendedVideo2 from '../../assets/thumbnail8.png';
 import recommendedVideo3 from '../../assets/thumbnail2.png';
+import recommendedVideo4 from '../../assets/mike.png';
+import recommendedVideo6 from '../../assets/tom.png';
+import recommendedVideo7 from '../../assets/thumbnail7.png';
+import recommendedVideo8 from '../../assets/thumbnail1.png';
+import recommendedVideo9 from '../../assets/thumbnail6.png';
+import recommendedVideo5 from '../../assets/entertainment.png';
+import recommendedVideo10 from '../../assets/history.png'
+// import recommendedVideo12 from '../../assets'
+// import recommendedVideo13 from '../../assets'
 import short1 from "../../assets/LEO.jpeg"
 import short2 from "../../assets/Amir.jpeg"
 import short3 from "../../assets/thumbnail2.png"
@@ -148,9 +157,20 @@ const Comments = () => {
     },
   ];
 
-  const recommendedVideos = [
+  const oneVideo = [
     {
       id: 1,
+      title: 'React Tutorial for Beginners',
+      channel: 'CodeWithHarryPuttar',
+      views: '1.2M views',
+      time: '2 weeks ago',
+      thumbnail: recommendedVideo1,
+    },
+  ];
+
+  const recommendedVideos = [
+    {
+      id: 2,
       title: 'React Tutorial for Beginners',
       channel: 'CodeWithHarry',
       views: '1.2M views',
@@ -158,7 +178,7 @@ const Comments = () => {
       thumbnail: recommendedVideo1,
     },
     {
-      id: 2,
+      id: 3,
       title: 'JavaScript Crash Course',
       channel: 'Traversy Media',
       views: '950K views',
@@ -166,13 +186,71 @@ const Comments = () => {
       thumbnail: recommendedVideo2,
     },
     {
-      id: 3,
+      id: 4,
       title: 'CSS Grid Layout Tutorial',
       channel: 'Web Dev Simplified',
       views: '780K views',
       time: '3 months ago',
       thumbnail: recommendedVideo3,
     },
+    {
+      id: 5,
+      title: 'JavaScript Closure Explained',
+      channel: 'Traversy Media',
+      views: '1.2M views',
+      time: '6 months ago',
+      thumbnail: recommendedVideo4,
+},
+{
+      id: 6,
+      title: 'Responsive Web Design with Flexbox',
+      channel: 'Academind',
+      views: '950K views',
+      time: '1 year ago',
+      thumbnail: recommendedVideo5,
+},
+{
+      id: 7,
+      title: 'Understanding the Event Loop in JavaScript',
+      channel: 'Fireship',
+      views: '870K views',
+      time: '5 months ago',
+      thumbnail: recommendedVideo6,
+},
+{
+      id: 8,
+      title: 'How to Build a REST API with Node.js',
+      channel: 'The Net Ninja',
+      views: '1.5M views',
+      time: '2 years ago',
+      thumbnail: recommendedVideo7,
+},
+{
+      id: 9,
+      title: 'Mastering Async/Await in JavaScript',
+      channel: 'Programming with Mosh',
+      views: '1.1M views',
+      time: '8 months ago',
+      thumbnail: recommendedVideo8,
+},
+{
+      id: 10,
+      title: 'CSS Flexbox in 20 Minutes',
+      channel: 'Kevin Powell',
+      views: '600K views',
+      time: '4 months ago',
+      thumbnail: recommendedVideo9,
+},
+{
+      id: 11,
+      title: 'React Hooks Crash Course',
+      channel: 'Dev Ed',
+      views: '1.3M views',
+      time: '1 year ago',
+      thumbnail: recommendedVideo10,
+},
+
+
   ];
   const shorts = [
     {
@@ -236,18 +314,22 @@ const Comments = () => {
               <p>{comment.likes}</p>
               <img src={dislike} alt="Dislike" className="action-icon" />
               <p>Reply</p>
-              <img src={reply} alt="Replies" className="action-icon" />
+              </div>
+              <div className='action-row'>
+              <img src={dropdown} alt="Replies" className="action-icon" />
               <p>{comment.replies} replies</p>
             </div>
           </div>
+          
         ))}
       </div>
 
-      {/* Recommended Videos Section */}
-      <div className="right-hand-section">
-        <div className="video-section">
-          {recommendedVideos.map((video) => (
-            <div className="recommended-video" key={video.id}>
+
+<div className="right-hand-section">
+{/* ONE VIDEO SECTION */}
+          <div className="video-section1">
+          {oneVideo.map((video) => (
+            <div className="one-video" key={video.id}>
               <img src={video.thumbnail} alt={video.title} className="video-thumbnail" />
               <div className="video-info">
                 <h4 className="video-title">{video.title}</h4>
@@ -257,9 +339,11 @@ const Comments = () => {
             </div>
           ))}
         </div>
+
+      
       
       {/* SHORTS */}
- <div className="shorts-section">
+ <div className="shorts-section1">
         <h3>Shorts</h3>
         <img src={yts} alt="Shorts" className="shorts-image" />
         <div className="shorts-container">
@@ -272,6 +356,20 @@ const Comments = () => {
           ))}
         </div>
       </div>
+      {/* Recommended Videos Section */}
+      
+        <div className="video-section">
+          {recommendedVideos.map((video) => (
+            <div className="recommended-video" key={video.id}>
+              <img src={video.thumbnail} alt={video.title} className="video-thumbnail" />
+              <div className="video-info">
+                <h4 className="video-title">{video.title}</h4>
+                <p className="video-channel">{video.channel}</p>
+                <p className="video-stats">{video.views} • {video.time}</p>
+              </div>
+            </div>
+          ))}
+        </div>
     </div>
     </div>
   );

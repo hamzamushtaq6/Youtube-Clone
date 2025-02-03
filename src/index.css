@@ -101,7 +101,7 @@ img{
     /* Adjust spacing for sidebar alignment */
     margin-top: -650px;
     /* Adjust spacing for navbar alignment */
-    background-color: #444;
+    /* background-color: #444; */
     /* Subtle background color */
 }
 
@@ -593,7 +593,7 @@ nav {
         /* Vertically center items */
         flex-wrap: nowrap;
         /* Prevent wrapping */
-        overflow-x: auto;
+        overflow-x: hidden;
         width: 800px;
         /* Explicit width */
     }
@@ -877,14 +877,13 @@ height: 20px;
 /* Right-hand section styling */
 .right-hand-section {
     flex: 1;
-    /* Adjust size as needed */
     padding: 20px;
     background-color: #f9f9f9;
-    /* Optional for visibility */
     text-align: center;
     position: sticky;
     /* Keep it fixed while scrolling */
     top: 0;
+
 }
 
 .right-hand-section nav{
@@ -909,4 +908,249 @@ height: 20px;
 
 .right-hand-section ul li {
     cursor: pointer;
+}
+/* RECOMMENDED VIDEOS */
+/* Main container */
+.main-container {
+  display: flex;
+  padding: 20px;
+}
+
+/* Comments section */
+.comments-section {
+  flex: 2;
+  margin-right: 20px;
+}
+
+/* Right-hand section */
+.right-hand-section {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Navigation */
+.right-hand-section nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.right-hand-section nav ul li {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #606060;
+}
+
+.right-hand-section nav ul li:hover {
+  color: #000;
+}
+
+/* Recommended videos */
+.video-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommended-video {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.video-thumbnail {
+  width: 168px;
+  height: 94px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.video-info {
+  flex: 1;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  color: #030303;
+}
+
+.video-channel {
+  font-size: 12px;
+  color: #606060;
+  margin: 5px 0;
+}
+
+.video-stats {
+  font-size: 12px;
+  color: #606060;
+  margin: 0;
+}
+
+.right-hand-section .shorts-section{
+    /* background-color: red; */
+    /* flex-direction: row; */
+    width: 500px;
+    padding-left: 500px;
+}
+
+.shorts-container{
+    background-color: transparent;
+    width: 3000px;
+    flex-direction: row;
+}
+
+/* Shorts Section */
+.shorts-section1 {
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    padding-bottom: 350px;
+    width: 100%;
+    /* background-color: black; */
+    
+    
+}
+
+.shorts-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0f0f0f;
+}
+
+/* Shorts Icon */
+.shorts-image {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Shorts Container */
+.shorts-container {
+    display: flex;
+    gap: 15px;
+    /* overflow-x: auto; */
+    /* Allows horizontal scrolling */
+    /* padding-bottom: 10px; */
+    height: 100px;
+}
+
+/* Individual Short */
+.short {
+    min-width: 120px;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    height: 320px;
+}
+
+.short:hover {
+    transform: scale(1.05);
+}
+
+/* Short Thumbnail */
+.short-thumbnail {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Short Title */
+.short-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0 5px;
+    color: #0f0f0f;
+}
+
+/* Short Stats (Views) */
+.short-stats {
+    font-size: 12px;
+    color: #606060;
+    margin: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* DEMO */
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  max-width: 400px; /* Adjust as needed */
+}
+
+.one-video {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.one-video:hover {
+  background-color: #eaeaea;
+}
+
+.video-thumbnail {
+  width: 120px; /* Adjust as needed */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.video-channel {
+  font-size: 12px;
+  color: #606060;
+  margin: 4px 0;
+}
+
+.video-stats {
+  font-size: 12px;
+  color: #909090;
+}
+
+
+
+
+ .action-icon{
+    width: 20px;
+    height: 25px;
+
+}
+
+.action-row{
+        display: flex;
+        color: blue;
+        margin-top: 20px;
+        margin-left: 25px;
 }
